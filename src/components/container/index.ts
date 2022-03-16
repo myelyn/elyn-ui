@@ -7,10 +7,10 @@ import yAside from './aside.vue';
 
 export default {
   install(Vue:App) {
-    Vue.component('YContainer', yContainer)
-    Vue.component('YHeader', yHeader)
-    Vue.component('YFooter', yFooter)
-    Vue.component('YMain', yMain)
-    Vue.component('YAside', yAside)
+    Vue.component(yContainer.name, yContainer)
+    Vue.component(yHeader.name, yHeader)
+    Vue.component(yFooter.name, yFooter)
+    Vue.component(yMain.name, yMain)
+    Vue.component(yAside.name, yAside)
   }
 }

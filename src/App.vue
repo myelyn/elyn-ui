@@ -8,6 +8,19 @@
       </y-container>
       <y-footer />
     </y-container>
+    <y-button />
+    <y-button
+      size="large"
+      type="warning"
+    />
+    <y-button
+      size="small"
+      type="success"
+    />
+    <y-button
+      size="small"
+      type="text"
+    />
   </div>
 </template>
 
