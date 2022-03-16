@@ -28,7 +28,7 @@ const isVertical = computed(() => {
     return slots.default().some((vn:VNode) => {
       const tag = (vn.type as Component).name;
       console.log(tag)
-      return tag === 'yHeader' || tag === 'yFooter';
+      return tag === 'YHeader' || tag === 'YFooter';
     });
   }
   return props.direction === 'vertical';
