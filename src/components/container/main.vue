@@ -11,9 +11,10 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../style/mixin.scss';
+@import '../../style/mixin';
 @include b(main) {
+  display: block;
   flex: 1;
+  box-sizing: border-box;
 }
-
 </style>

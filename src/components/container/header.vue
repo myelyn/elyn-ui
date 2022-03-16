@@ -8,7 +8,7 @@
 </template>
 <script>
 export default {
-  name: 'ElHeader',
+  name: 'YHeader',
   props: {
     height: {
       type: String,
@@ -17,3 +17,11 @@ export default {
   },
 };
 </script>
+      
+<style lang="scss">
+  @import '../../style/mixin';
+  @include b(header) {  
+    box-sizing: border-box;  
+    flex-shrink: 0;
+  }
+</style>

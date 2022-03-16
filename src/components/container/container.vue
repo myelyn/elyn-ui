@@ -27,7 +27,8 @@ const isVertical = computed(() => {
   if (slots.default) {
     return slots.default().some((vn:VNode) => {
       const tag = (vn.type as Component).name;
-      return tag === 'yHeader' || tag === 'yFooter';
+      console.log(tag)
+      return tag === 'YHeader' || tag === 'YFooter';
     });
   }
   return props.direction === 'vertical';
@@ -40,6 +41,8 @@ const isVertical = computed(() => {
   flex: 1;
   flex-direction: row;
   box-sizing: border-box;
+  min-width: 0;
+  flex-basis: auto;
   &.is-vertical {
     flex-direction: column;
   }

@@ -17,3 +17,10 @@ export default {
   },
 };
 </script>
+<style lang="scss">
+  @import '../../style/mixin';
+  @include b(footer) {  
+    box-sizing: border-box;  
+    flex-shrink: 0;
+  }
+</style>

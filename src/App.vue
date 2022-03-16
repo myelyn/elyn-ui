@@ -1,29 +1,18 @@
 <template>
-  <y-container style="height: 500px;">
-    <y-header />
+  <div style="width: 100%; height: 500px;">
     <y-container>
+      <y-header>header</y-header>
       <y-container>
-        <y-header />
-        <y-main />
-        <y-footer />
+        <y-aside>aside</y-aside>
+        <y-main>main</y-main>
       </y-container>
-      <y-main>
-        <y-container>
-          <y-aside />
-          <y-main />
-        </y-container>
-      </y-main>
+      <y-footer />
     </y-container>
-    <y-footer />
-  </y-container>
+  </div>
 </template>
 
 <script setup lang="ts">
-import yContainer from './components/container/container.vue';
-import yHeader from './components/container/header.vue';
-import yFooter from './components/container/footer.vue';
-import yMain from './components/container/main.vue';
-import yAside from './components/container/aside.vue';
+
 </script>
 
 <style>
@@ -32,5 +21,8 @@ import yAside from './components/container/aside.vue';
 }
 .y-main {
   background-color: #eee;
+}
+.y-footer {
+  background-color: #cef;
 }
 </style>
